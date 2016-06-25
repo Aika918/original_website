@@ -5,8 +5,6 @@ h1 {
   font-family: Fredoka One;
 }
 
-
-
 nav {
 	float:right;
 	background-color: #5BD3AB;
@@ -19,7 +17,13 @@ nav li {
 	font-size: 20px;
 	padding-right:30px;
 	font-family: Fredoka One;
-	float: right;
+	color: black;
+}
+
+
+nav li:hover {
+	text-decoration: none;
+	color: #6E09FF;
 }
 
 /*サブタイトル*/
@@ -27,9 +31,10 @@ nav li {
 	font-size: 50px;
 	text-align: center;
 	font-family: Fredoka One;
-	padding-top: 50px;
 	text-decoration: underline;
 	margin-top: 50px;
+	width: auto;
+
 }
 
 #Taste {
@@ -46,6 +51,7 @@ nav li {
 	font-size: 25px;
 	text-decoration: underline;
 	background-color: #5BD3AB;
+	text-align: center;
 }
 
 .Taste h3 {
@@ -75,6 +81,7 @@ nav li {
 	margin-right: 700px;
 	top: 1700px;
 	left: 30px;
+	border-radius: 20px;
 }
 .fukidashi1:after, .fukidashi1:before {
 	top: 100%;
@@ -98,6 +105,8 @@ nav li {
 	border-top-color: #DC94E0;
 	border-width: 36px;
 	margin-left: -36px;
+	display: block;
+	z-index: 0;
 }
 
 .fukidashi2 {
@@ -110,6 +119,7 @@ nav li {
 	float: left;
 	top: 1700px;
 	left: 1100px;
+	-webkit-border-radius: 20px;
 }
 .fukidashi2:after, .fukidashi2:before {
 	top: 100%;
@@ -133,4 +143,37 @@ nav li {
 	border-top-color: #DC94E0;
 	border-width: 36px;
 	margin-left: -36px;
+}
+
+.About {
+	float: right;
+	width: 60%;
+	font-size: 30px;
+	font-family: HG丸ｺﾞｼｯｸM-PRO;
+	text-align: left;
+}
+
+.container {
+	width: 100%;
+	height: 200px;
+	background-color: #5BD3AB;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+	font-family: Fredoka One;
+	font-size: 25px;
+}
+
+footer a:hover {
+	color: #6E09FF;
+}
+
+.copyright {
+	text-align: right;
+	width: 300px;
+	float: right;
+	padding-right: 10px;
+	margin: 25px 10px 0 0;
 }
