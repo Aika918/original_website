@@ -37,9 +37,16 @@ nav li:hover {
 
 }
 
+/*??なんで全体の色が変わらない？？*/
+.Taste {
+	width: 100%;
+	background-color: #5BD3AB;
+	perspective: 1000px;
+ -webkit-perspective: 1000px;
+}
+
 #Taste {
 	text-align: center;
-	float:left
 	display: inline-block;
 }
 
@@ -47,18 +54,45 @@ nav li:hover {
 	float: left;
 	display: inline-block;
 	padding: 40px;
-	font-family: Fredoka One;
+	font-family: ヒラギノ丸ゴ ProN W4;
 	font-size: 25px;
 	text-decoration: underline;
 	background-color: #5BD3AB;
 	text-align: center;
+	position: relative;
 }
+
+dl {
+	position: absolute;
+	top:0;
+	background-color:rgba(255,0,0,0.15);;
+  transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+	width:300px;
+	height: 230px;
+	text-align: center;
+}
+
+dl:hover {
+	transform: rotateX(0);
+  -webkit-transform: rotateX(0);
+}
+
+/*backface-visibilityどこに入れる？*/
+
+.pic {
+	perspective: 1000px;
+  -webkit-perspective: 1000px;;
+}
+
+.pic:hover {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
 
 .Taste h3 {
 	background-color: #DC94E0;
 	font-color: black;
 }
-
 
 
 #Product h3 {
@@ -82,7 +116,7 @@ nav li:hover {
 	float: left;
 	margin-left: 50px;
 	margin-right: 700px;
-	top: 700px;
+	top: 70px;
 	left: 30px;
 	border-radius: 20px;
 }
@@ -120,7 +154,7 @@ nav li:hover {
 	font-family: HG丸ｺﾞｼｯｸM-PRO;
 	width: 300px;
 	float: left;
-	top: 700px;
+	top: 50px;
 	left: 1100px;
 	-webkit-border-radius: 20px;
 }
