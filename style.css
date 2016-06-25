@@ -68,6 +68,9 @@ nav li:hover {
 }
 
 /*吹き出し*/
+.productpic {
+	position: relative;
+}
 
 .fukidashi1 {
 	position: absolute;
@@ -79,7 +82,7 @@ nav li:hover {
 	float: left;
 	margin-left: 50px;
 	margin-right: 700px;
-	top: 1700px;
+	top: 700px;
 	left: 30px;
 	border-radius: 20px;
 }
@@ -117,7 +120,7 @@ nav li:hover {
 	font-family: HG丸ｺﾞｼｯｸM-PRO;
 	width: 300px;
 	float: left;
-	top: 1700px;
+	top: 700px;
 	left: 1100px;
 	-webkit-border-radius: 20px;
 }
