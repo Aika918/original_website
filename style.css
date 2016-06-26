@@ -71,6 +71,7 @@ dl {
 	width:300px;
 	height: 230px;
 	text-align: center;
+	backface-visibility: hidden;
 }
 
 dl:hover {
@@ -78,7 +79,7 @@ dl:hover {
   -webkit-transform: rotateX(0);
 }
 
-/*backface-visibilityどこに入れる？*/
+
 
 .pic {
 	perspective: 1000px;
@@ -88,6 +89,7 @@ dl:hover {
 .pic:hover {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
+}
 
 .Taste h3 {
 	background-color: #DC94E0;
@@ -95,7 +97,7 @@ dl:hover {
 }
 
 
-#Product h3 {
+#Product p {
 	text-align: center;
 	border: #6E09FF solid 2px;
 	font-color: black;
