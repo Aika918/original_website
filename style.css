@@ -1,31 +1,66 @@
-
-h1 {
-	font-size: 150px;
-	text-align: center;
-  font-family: Fredoka One;
+pre,textarea{overflow:auto}
+[hidden],audio:not([controls]),template{display:none}
+details,main,summary{display:block}
+input[type=number]{width:auto}
+input[type=search]{-webkit-appearance:textfield}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+progress{display:inline-block}
+small{font-size:75%}
+textarea{resize:vertical}
+[unselectable]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+*,::after,::before{box-sizing:inherit;border-style:solid;border-width:0}
+*{font-size:inherit;line-height:inherit;margin:0;padding:0}
+::after,::before{text-decoration:inherit;vertical-align:inherit}
+:root{-ms-overflow-style:-ms-autohiding-scrollbar;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;cursor:default;font:16px/1.5 sans-serif;text-rendering:optimizeLegibility}
+a{text-decoration:none}
+audio,canvas,iframe,img,svg,video{vertical-align:middle}
+button,input,select,textarea{background-color:transparent;color:inherit;font-family:inherit;font-style:inherit;font-weight:inherit;min-height:1.5em}
+code,kbd,pre,samp{font-family:monospace,monospace}
+nav ol,nav ul{list-style:none}
+select{-moz-appearance:none;-webkit-appearance:none}
+select::-ms-expand{display:none}
+select::-ms-value{color:currentColor}
+table{border-collapse:collapse;border-spacing:0}
+::-moz-selection{background-color:#B3D4FC;text-shadow:none}
+::selection{background-color:#B3D4FC;text-shadow:none}
+@media screen{[hidden~=screen]{display:inherit}
+[hidden~=screen]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0)!important;position:absolute!important}
 }
 
-nav {
-	float:right;
-	background-color: #5BD3AB;
+.dots {
+	background-color: white;
+	background-image: url(dots.gif);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 120px;
+	text-align: center;
+  font-family: Avenir Next LT Pro;
+	margin-bottom: 170px;
+	padding-top: 50px;
+}
+
+.navi {
+	display: flex;
+	justify-content: flex-end;
+	background-color: #333333;
 	height: 50px;
 	width: 100%;
 }
 
-.navi {
-	float:right;
-}
-
 nav li {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 26px;
 	padding-right:30px;
-	font-family: Fredoka One;
-	color: black;
+	font-family: Avenir Next LT Pro;
+	color: white;
+	line-height: 50px;
 }
 
 nav a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -38,31 +73,39 @@ nav a:hover {
 
 /*サブタイトル*/
  h2 {
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
-	font-family: Fredoka One;
+	font-family: Avenir Next LT Pro;
 	text-decoration: underline;
 	margin-top: 50px;
 	width: auto;
+	padding-bottom: 50px;
+	padding-top: 30px;
 
 }
 
-/*??なんで全体の色が変わらない？？*/
 /*TASTE*/
-
 .name {
-	font-size: 30px;
+	font-size: 25px;
 	text-decoration: underline;
 }
 
-.Taste {
+.taste-wrapper {
 	width: 100%;
 	background-color: #5BD3AB;
+	height: 550px;
 }
 
 #Taste {
+	width: 100%;
 	text-align: center;
 	display: inline-block;
+}
+
+.tastes {
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
 }
 
 .flip-container {
@@ -118,50 +161,78 @@ nav a:hover {
     transform: rotateY(180deg);
 }
 
-.Taste li {
-	float: left;
-	display: inline-block;
-	font-family: Avenir Next;
-	font-size: 25px;
-	background-color: #5BD3AB;
-	text-align: center;
-	position: relative;
+.taste-wrapper ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.Taste h3 {
+.taste-wrapper li {
+	font-family: Avenir Next LT Pro Light;
+	font-size: 23px;
+	background-color: #5BD3AB;
+	text-align: center;
+	list-style: none;
+}
+
+.taste-wrapper h3 {
 	background-color: #DC94E0;
 	font-color: black;
-	font-family: Fredoka One;
+	font-family: Avenir Next LT Pro Light;
 	text-align: center;
 }
 
 .site a{
 	color: black;
+	margin-top: 2px;
+	background-color: #FFFCD5;
+	border-radius: 8px;
+	border: solid 3px #B2B2B2;
+	font-size: 18px;
+	font-family: #B2B2B2；
 }
 
 .site a:hover {
 	color: #6E09FF;
 	font-weight: bold;
+	background-color: #B2B2B2;
 }
 
 .back p {
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
+}
+
+
+.place img {
+    border-radius: 150px;
+    -moz-border-image: border-radius: 150px;
+    -webkit-border-image: border-radius: 150px;
+		padding-top: 20px;
 }
 
 
 /*PRODUCT*/
 
-#Product p {
+.common {
 	text-align: center;
-	border: #6E09FF solid 2px;
+	border: black solid 2px;
 	font-color: black;
+	font-family: Avenir Next LT Pro Light;
+	font-size: 20px;
 }
-
 
 /*吹き出し*/
 .productpic {
 	position: relative;
+	background-color: #333333;
+	margin-top: 35px;
+}
+
+.productpic img {
+	display: block;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .fukidashi1 {
@@ -172,9 +243,9 @@ nav a:hover {
 	font-family: HG丸ｺﾞｼｯｸM-PRO;
 	width: 300px;
 	float: left;
-	margin-left: 50px;
+	margin-left: 80px;
 	margin-right: 700px;
-	top: 70px;
+	top: 30px;
 	left: 30px;
 	border-radius: 20px;
 }
@@ -212,8 +283,8 @@ nav a:hover {
 	font-family: HG丸ｺﾞｼｯｸM-PRO;
 	width: 300px;
 	float: left;
-	top: 50px;
-	left: 1100px;
+	top: 30px;
+	left: 1000px;
 	-webkit-border-radius: 20px;
 }
 .fukidashi2:after, .fukidashi2:before {
@@ -240,24 +311,143 @@ nav a:hover {
 	margin-left: -36px;
 }
 
+
 .About {
-	float: right;
-	width: 60%;
-	font-size: 30px;
+	font-size: 15px;
 	font-family: HG丸ｺﾞｼｯｸM-PRO;
 	text-align: left;
+	float:left;
+	padding: 30px;
+	color: white;
 }
 
 .container {
 	width: 100%;
 	height: 200px;
+	align-items: baseline;
+}
+
+.last{
+	background-color: #333333;
+	width:100%;
+	height: 200px;
+}
+.reverse {
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.reverse a {
+	color: white;
+	font-family: Avenir Next LT Pro Light;
+}
+
+.reverse:hover {
+	font-weight: bold;
+}
+
+#Recipe p {
+	font-size: 20px;
+	margin: 20px 0;
+	text-align: center;
+	font-family: Avenir Next LT Pro Light;
+	border: black solid 2px;
+}
+
+.advantage {
+	font-size: 30px;
+	padding-left: 100px;
+	margin-top: 40px;
+	font-family: "HG丸ｺﾞｼｯｸM-PRO";
+	width: 570px;
+	background-color: #333333;
+	color: white;
+}
+
+.howto li{
+	font-size: 15px;
+	padding-left: 100px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	font-family: HG丸ｺﾞｼｯｸM-PRO;
+	width: 570px;
+	display: inline-block;
+	background-color: #333333;
+	color: white;
+}
+
+
+.howto {
+	background-color: #5BD3AB;
+	width:100%;
+	display: flex;
+}
+
+.point {
 	background-color: #5BD3AB;
 }
+
+.video {
+	padding-bottom: 100px;
+	padding-right: 150px;
+	width: 520;
+}
+
+.pink {
+	width: 350px;
+	background-color: #dc94e0;
+}
+
+.green {
+	background-color: #5BD3AB;
+	width: 350px;
+}
+
+.shops {
+	font-size: 30px;
+	font-family: Avenir Next LT Pro Light;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.address {
+	font-size: 15px;
+	text-align: center
+}
+
+.green img {
+  border-radius: 150px;
+  -moz-border-image: border-radius: 150px;
+  -webkit-border-image: border-radius: 150px;
+  padding-top: 20px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pink img {
+	border-radius: 150px;
+  -moz-border-image: border-radius: 150px;
+  -webkit-border-image: border-radius: 150px;
+  padding-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.recommend {
+	display:flex;
+	padding-bottom: 100px;
+	width: 1050px;
+	margin: 0 auto;
+}
+
 
 footer a {
 	text-decoration: none;
 	color: black;
-	font-family: Fredoka One;
+	font-family: Avenir Next LT Pro;
 	font-size: 25px;
 }
 
@@ -267,8 +457,9 @@ footer a:hover {
 
 .copyright {
 	text-align: right;
-	width: 300px;
+	width: 250px;
 	float: right;
 	padding-right: 10px;
-	margin: 25px 10px 0 0;
+	margin: 0 10px 0 0;
+	color: white;
 }

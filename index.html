@@ -7,180 +7,249 @@
   <meta name= "Description" content= "美味しいかき氷のお店">
   <meta name= "Keywords" content="かき氷,美味しい,関西">
   <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/myfirst.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <script src="js/myfirst.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!--ここからheader!-->
-<header>
-   <div id="Top">
-    <div class= "main-visual">
-      <img src= "shaved-ice-logo.gif" alt="logo" width="200">
-      <h1>Shaved <br>Ice</h1>
-    <div class= "nav-bar">
-      <nav>
+  <!--ここからheader!-->
+  <header>
+    <div id="Top">
+      <div class= "dots">
+        <img src= "shaved-ice-logo.gif" alt="logo" width="200">
+        <h1>Shaved <br>Ice</h1>
+        <nav class="navi">
+          <ul>
+            <li><a href="#Top">Top</a></li>
+            <li><a href="#Taste">Taste</a></li>
+            <li><a href="#Product">Product</a></li>
+            <li><a href="#Recipe">Recipe</a></li>
+            <li><a href="#Recommend">Recommend</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <!--ここからmain・taste!-->
+  <div id= "Taste">
+    <h2>Taste</h2>
+    <div class="taste-wrapper">
+      <div class="tastes">
         <ul>
-          <div class= "navi">
-          <li><a href="#Top">Top</a></li>
-          <li><a href="#Taste">Taste</a></li>
-          <li><a href="#Product">Product</a></li>
-          <li><a href="#About">About</a></li>
-        </div>
+          <li>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class= "place">
+                <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
+                  <!-- 表コンテンツエリア -->
+                  <img src="09.jpg" alt="kiwi" width="200">
+                </div>
+                <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
+                  <!-- 裏コンテンツエリア -->
+                  <div class="name"><strong><br>宝石箱</strong></div><br><p>奈良県奈良市餅飯殿町12夢CUBE</p>
+                  <div class="site"><a href="https://www.facebook.com/housekibaco/" target="_blank">facebook</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <h3>kiwi</h3>
+          </li>
+          <li>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="place">
+                <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
+                  <!-- 表コンテンツエリア -->
+                  <img src="IMG_9303.jpg" alt="tiramisu" width="200">
+                </div>
+                <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
+                  <!-- 裏コンテンツエリア -->
+                  <div class="name"><strong><br>夙川桜庵</strong></div><br><p>兵庫県 西宮市 相生町 6-1 1F</p>
+                  <div class="site"><a href="https://www.facebook.com/syukugawasakuraan/" target="_blank">facebook</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <h3>tiramisu</h3>
+          </li>
+          <li>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="place">
+                <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
+                  <!-- 表コンテンツエリア -->
+                  <img src="akafuku.jpg" alt="macha" width="200">
+                </div>
+                <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
+                  <!-- 裏コンテンツエリア -->
+                  <div class="name"><strong><br>赤福</strong></div><br><p>大阪府大阪市中央区難波５丁目１−５大阪タカシマヤ</p>
+                  <div class="site"><a href="http://www.akafuku.co.jp" target="_blank">homepage</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <h3>macha</h3>
+          </li>
+          <li>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class= "place">
+                <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
+                  <!-- 表コンテンツエリア -->
+                  <img src="20150430193633.jpg" alt="milktea tapioca" width="200">
+                </div>
+                <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
+                  <!-- 裏コンテンツエリア -->
+                  <div class="name"><strong><br>Ice monster</strong></div><p><br>大阪府大阪市北区大深町4-20グランフロント大阪ショップレストラン 南館7F</p>
+                  <div class="site"><a href="http://ice-monster.co.jp" target="_blank">homepage</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <h3>milktea tapioca</h3>
+          </li>
+          <li>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="place">
+                <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
+                  <!-- 表コンテンツエリア -->
+                  <img src="condensedmilk.jpg" alt="condensed milk" width="200">
+                </div>
+                <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
+                  <!-- 裏コンテンツエリア -->
+                  <div class="name"><strong><br>徳屋</strong></div><br><p>京都府京都市東山区祇園町南側570-127</p>
+                  <div class="site"><a href="http://gion-tokuya.jp" target="_blank">homepage</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <h3>condensed milk</h3>
+          </li>
+          <li>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="place">
+                <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
+                  <!-- 表コンテンツエリア -->
+                  <img src="milk.jpg" alt="milk" width="200">
+                </div>
+                <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
+                  <!-- 裏コンテンツエリア -->
+                  <div class="name"><strong><br>祇園NITI</strong></div><br><p>京都市東山区祗園町南側570-8</p>
+                  <div class="site"><a href="http://www.gion-niti.com" target="_blank">homepage</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <h3>milk</h3>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
   </div>
-</div>
- </header>
 
-
-<!--ここからmain・taste!-->
-   <div id= "Taste">
-     <h2>Taste</h2>
-     <div class="Taste">
-   <ul class="Taste">
-
-     <li>
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-         <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
-            <!-- 表コンテンツエリア -->
-            <img src="09.jpg" alt="kiwi" width="300">
-           </div>
-          <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
-            <!-- 裏コンテンツエリア -->
-            <div class="name"><strong>宝石箱</strong></div><br><p>奈良県奈良市餅飯殿町12夢CUBE</p>
-            <div class="site"><a href="https://www.facebook.com/housekibaco/" target="_blank">facebook</a>
-         </div>
-            </div>
-           </div>
-          </div>
-          <h3>kiwi</h3>
-     </li>
-     <li>
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-         <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
-            <!-- 表コンテンツエリア -->
-            <img src="IMG_9303.jpg" alt="tiramisu" width="300">
-           </div>
-          <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
-            <!-- 裏コンテンツエリア -->
-            <div class="name"><strong>夙川桜庵</strong></div><br><p>兵庫県 西宮市 相生町 6-1 1F</p>
-            <div class="site"><a href="https://www.facebook.com/syukugawasakuraan/" target="_blank">facebook</a>
-         </div>
-            </div>
-           </div>
-          </div>
-          <h3>tiramisu</h3>
-     </li>
-     <li>
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-         <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
-            <!-- 表コンテンツエリア -->
-            <img src="akafuku.jpg" alt="macha" width="300">
-           </div>
-          <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
-            <!-- 裏コンテンツエリア -->
-            <div class="name"><strong>赤福</strong></div><br><p>大阪府大阪市中央区難波５丁目１−５大阪タカシマヤ</p>
-            <div class="site"><a href="http://www.akafuku.co.jp" target="_blank">homepage</a>
-         </div>
-            </div>
-           </div>
-          </div>
-          <h3>macha</h3>
-     </li>
-     <li>
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-         <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
-            <!-- 表コンテンツエリア -->
-            <img src="20150430193633.jpg" alt="milktea tapioca" width="300">
-           </div>
-          <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
-            <!-- 裏コンテンツエリア -->
-            <div class="name"><strong>Ice monster</strong></div><p><br>大阪府大阪市北区大深町4-20グランフロント大阪ショップレストラン 南館7F</p>
-            <div class="site"><a href="http://ice-monster.co.jp" target="_blank">homepage</a>
-         </div>
-            </div>
-           </div>
-          </div>
-          <h3>milktea tapioca</h3>
-     </li>
-     <li>
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-         <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
-            <!-- 表コンテンツエリア -->
-            <img src="condensedmilk.jpg" alt="condensed milk" width="300">
-           </div>
-          <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
-            <!-- 裏コンテンツエリア -->
-            <div class="name"><strong>徳屋</strong></div><br><p>京都府京都市東山区祇園町南側570-127</p>
-            <div class="site"><a href="http://gion-tokuya.jp" target="_blank">homepage</a>
-         </div>
-            </div>
-           </div>
-          </div>
-          <h3>condensed milk</h3>
-     </li>
-     <li>
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-         <div class="front" style="background: url(omote.jpg) 0 0 no-repeat;">
-            <!-- 表コンテンツエリア -->
-             <img src="milk.jpg" alt="milk" width="300">
-           </div>
-          <div class="back" style="background: url(ura.jpg) 0 0 no-repeat;">
-            <!-- 裏コンテンツエリア -->
-            <div class="name"><strong>祇園NITI</strong></div><br><p>京都市東山区祗園町南側570-8</p>
-            <div class="site"><a href="http://www.gion-niti.com" target="_blank">homepage</a>
-         </div>
-            </div>
-           </div>
-          </div>
-          <h3>milk</h3>
-     </li>
-   </ul>
- </div>
- </div>
-
-<!--ここからproduct!-->
+  <!--ここからproduct!-->
   <div id= "Product">
     <h2> Product</h2>
-    <p> 美味しいかき氷の共通点</p>
+    <div class= "common"> Common Points</div>
     <div class="productpic">
-    <img src="shaved ice.gif" alt="shaved ice" width="100%px";>
-    <div class= "fukidashi">
-    <div class= "fukidashi1"><strong>氷の薄さ</strong><br>
-    氷を薄く削ることで、口当たりの良いふわふわ食感が作り上げられる。
+      <img src="shaved ice.gif" alt="shaved ice" width="900px">
+      <div class= "fukidashi">
+        <div class= "fukidashi1"><strong>氷の薄さ</strong><br>
+          氷を薄く削ることで、口当たりの良いふわふわ食感が作り上げられる。
+        </div>
+        <div class= "fukidashi2"><strong>天然水を使用</strong><br>不純物がないため通常の水に比べて溶けにくく、冷たすぎない状態で提供できるため、頭がキーンとしない。
+        </div>
+      </div>
     </div>
-     <div class= "fukidashi2"><strong>天然水を使用</strong><br>不純物がないため通常の水に比べて溶けにくく、冷たすぎない状態で提供できるため、頭がキーンとしない。</div>
- </div>
- </div>
- </div>
-
- <div id= "About">
-   <h2>About</h2>
-   <img  src="IMG_8856.jpg" alt="shaved ice" width=40%>
-   <div class= "About">これは関西で美味しいかき氷のお店を紹介するサイトです。<br>どのお店も人気が高いので、長い時は３時間以上待つこともありますが、それだけの価値があるお店ばかりです!<br>是非試してみてください!
-   </div>
- </div>
-
-
- <!--ここからfooter!-->
-
- <footer>
-  <div class="container">
-    <a href="#Top">Back to Top</a>
-    <div class="copyright">
-    <img src= "shaved-ice-logo.gif" alt="logo" width="250" align="right">
-    <small>Copyright &copy; 2016 Aika Miyashiro</small>
   </div>
+
+  <div id= "Recipe">
+    <h2> Recipe </h2>
+    <p>How to make delicious shaved ice at home?</p>
+    <div class="point">
+    <div class="advantage">
+      ポイント
+    </div>
+      <div class="howto">
+    <ul>
+      <li>◉ミネラルウォーターを使う</li>
+      <li>◉水を凍らせる前に砂糖を入れる（100mlにつき大さじ１杯程度）</li>
+      <li>◉時間をかけて凍らせる</li>
+      <li>◉冷蔵庫から氷を出してもすぐに使わず10分程度おいてから使う</li>
+      <li>◉牛乳を凍らして削ると水に比べてふわふわになる</li>
+      <li>◉細かく氷を削れるかき氷機を使う</dv>
+    </ul>
+    <div class= "video">
+　　<iframe width="520" height="275" src="https://www.youtube.com/embed/P6w7AGTAsvk" frameborder="0" allowfullscreen></iframe>
   </div>
- </footer>
+</div>
+ </div>
+ </div>
+
+  <div id= "Recommend">
+    <h2>Recommend Shops</h2>
+    <div class= "recommend">
+
+      <div class= "pink">
+        <div class="shops">
+          1.大阪浪花家
+      </div>
+      <div class="address">
+        大阪府大阪市北区中崎1-9-21 天五中崎通り商店街
+      </div>
+      <img src="osaka.jpg" width= "300px">
+    </div>
+
+     <div class= "green">
+        <div class="shops">
+          2. Cocoo cafe
+      </div>
+      <div class="address">
+        大阪府大阪市西区靭本町2-2-23靭交番前ビル402
+      </div>
+      <img src="cocoo.jpg" width= "300px">
+    </div>
+
+      <div class= "pink">
+        <div class="shops">
+          3.木と根
+      </div>
+      <div class="address">
+        京都府京都市下京区燈籠町589-1 1階
+      </div>
+      <img src="ki.jpg" width= "300px">
+      </div>
+  </div>
+
+
+  <!--ここからfooter!-->
+
+  <footer>
+    <div class="container">
+      <div class= "last">
+      <div class= "About">これは関西で美味しいかき氷のお店を紹介するサイトです。<br>どのお店も人気が高いので、長い時は３時間以上待つこともありますが、それだけの価値があるお店ばかりです!<br>是非試してみてください!
+        <div class="reverse">
+        <a href="#Top">Back to Top</a></div>
+    </div>
+
+      <div class="copyright">
+        <img src= "shaved-ice-logo.gif" alt="logo" width="240" align="right">
+
+        <small>Copyright &copy; 2016 Aika Miyashiro</small>
+      </div>
+    </div>
+    </div>
+  </footer>
 </body>
 </html>
